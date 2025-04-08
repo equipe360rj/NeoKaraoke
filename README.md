@@ -8,4 +8,5 @@ Languages: Brazilian Portuguese, English, French and Spanish.
 
 Make your donation:
 Pix: equipe360rj@gmail.com
-Paypal:
+
+Paypal: https://www.paypal.com/donate/buttons/manage/PUX9CASUMCB7G
