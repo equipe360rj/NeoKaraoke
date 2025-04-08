@@ -10,4 +10,4 @@ Make your donation:
 
 Pix: equipe360rj@gmail.com
 
-Paypal: https://www.paypal.com/donate/buttons/manage/PUX9CASUMCB7G
+Paypal: https://www.paypal.com/donate?hosted_button_id=PUX9CASUMCB7G
