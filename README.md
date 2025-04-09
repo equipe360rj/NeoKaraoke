@@ -1,4 +1,5 @@
-# NeoKaraoke
+![neokaraoke banner](https://github.com/user-attachments/assets/1b813948-e287-4703-98cc-28857dddc949)
+
 
 Karaoke System for Windows and Linux.
 
