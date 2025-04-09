@@ -1,4 +1,4 @@
-![neokaraoke banner](https://github.com/user-attachments/assets/1b813948-e287-4703-98cc-28857dddc949)
+![neokaraoke banner](https://github.com/user-attachments/assets/8b95e9a5-b31e-461a-adb8-8fd8d21b67ab)
 
 NeoKaraoke is a karaoke video playback queue management application designed to provide a simple and intuitive experience on both Windows and Linux environments. Built with a modern, dark-themed graphical interface, the program allows users to organize and play karaoke songs in MP4 format, leveraging VLC Media Player as an external playback engine.
 
