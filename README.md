@@ -13,7 +13,7 @@ NeoKaraoke is a karaoke video playback queue management application designed to 
 
 **Supported Platforms:**
 - Windows (with VLC at `C:\Program Files\VideoLAN\VLC\vlc.exe`).
-- Linux (with VLC at `/usr/bin/vlc`, adjustable based on the distribution).
+- Linux (with VLC at `/usr/bin/vlc`, adjustable based on the distribution). (Testing)
 
 **Usage:**
 Perfect for karaoke events, parties, or personal use, NeoKaraoke is portable and requires no complex installation, provided VLC is present on the system.
