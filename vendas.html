@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar NeoKaraoke V1.0</title>
+    <meta name="description" content="Adquira sua licença vitalícia do NeoKaraoke por apenas R$ 19,99.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .checkout-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 2rem 4rem;
+        }
+
+        .checkout-box {
+            max-width: 500px;
+            width: 100%;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin: 1.5rem 0;
+            color: var(--primary-color);
+        }
+
+        .price span {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .features-list {
+            list-style: none;
+            text-align: left;
+            margin: 2rem 0;
+        }
+
+        .features-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-secondary);
+        }
+
+        .features-list ion-icon {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="scrolled">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <ion-icon name="mic-outline" style="color: var(--primary-color);"></ion-icon>
+                NeoKaraoke
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Voltar ao Site</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="checkout-container">
+            <div class="checkout-box glass-panel fade-up">
+                <h2>Licença Vitalícia</h2>
+                <div class="price">
+                    <span>R$</span> 20,00
+                </div>
+                <p>Pagamento único. Sem mensalidades.</p>
+
+                <ul class="features-list">
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Licença atrelada ao seu Computador</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Sistema de Fila Inteligente unificado</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Download Direto e Rápido do YouTube em MP4</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Tela de Visualização Remota (PC/Smart TV)</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> DJ de Intervalo Integrado automático</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Inserção Ágil de Múltiplos Cantores</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Atualizador Inteligente do Motor Embutido</li>
+                    <li><ion-icon name="checkmark-circle"></ion-icon> Funciona em Windows 8/10/11</li>
+                </ul>
+
+                <div style="margin-top: 2rem;">
+                    <a href="#" class="btn btn-primary" style="width: 100%; font-size: 1.2rem; padding: 1rem;">Finalizar
+                        Compra Segura</a>
+                </div>
+                <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-secondary);">
+                    Preencha os dados na página de checkout da operadora. Após a compra, você receberá a chave de
+                    ativação por e-mail.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
