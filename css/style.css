@@ -173,6 +173,13 @@ header.scrolled {
   color: var(--primary-color);
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
 /* Hero Section */
 .hero {
   min-height: 80vh;
@@ -188,16 +195,19 @@ header.scrolled {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  justify-items: start;
 }
 
 .hero-text {
   z-index: 2;
+  text-align: left;
 }
 
 .hero-buttons {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
+  justify-content: flex-start;
 }
 
 .hero-image-wrapper {
@@ -370,11 +380,28 @@ footer {
 
   .hero-content {
     grid-template-columns: 1fr;
+    gap: 3rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .hero-buttons {
     justify-content: center;
+  }
+
+  .hero-image-wrapper {
+    transform: none !important;
+    /* Desativa 3D */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .showcase-item {
@@ -393,11 +420,65 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+
+  header,
+  header.scrolled {
+    position: fixed;
+    /* Volta a ser fixo, mas agora com hamburger menu ocupando pouco espaço */
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding: 1rem 0;
   }
 
-  /* Add hamburger menu logic later if needed */
+  /* Adaptação Navbar */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block !important;
+    /* Mostra o botão hamburger de 3 barras */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--surface-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: none;
+    /* Esconde completamente por padrão */
+    z-index: 999;
+  }
+
+  /* Classe que o JS vai adicionar quando clicar no Menu Hamburger */
+  .nav-links.active {
+    display: flex;
+    /* Exibe como Flex quando ativo */
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .nav-links li {
+    margin-right: 0 !important;
+  }
+
+  /* Exibe todos os botões e links dentro do menu dropdown do mobile */
+  .nav-links li:nth-child(2),
+  .nav-links li:nth-child(3) {
+    display: block;
+  }
+
+  /* Tamanhos de Fonte */
   h1 {
     font-size: 2.2rem;
   }
@@ -406,8 +487,30 @@ footer {
     font-size: 1.8rem;
   }
 
+  /* Espaçamento em caixas */
   .cta-box {
     padding: 2rem;
+  }
+
+  .hero {
+    padding-top: 140px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: auto;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .showcase-image,
+  .hero-image-wrapper {
+    margin-top: 1.5rem;
   }
 }
 
@@ -421,4 +524,16 @@ footer {
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

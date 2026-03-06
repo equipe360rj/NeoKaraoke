@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Mobile Hamburger Menu ---
+    const mobileMenuBtn = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+
+            // Opcional: Anima o ícone
+            const icon = mobileMenuBtn.querySelector('ion-icon');
+            if (navLinks.classList.contains('active')) {
+                icon.setAttribute('name', 'close-outline');
+            } else {
+                icon.setAttribute('name', 'menu-outline');
+            }
+        });
+
+        // Fechar o menu ao clicar em um link interno
+        const linksMenu = navLinks.querySelectorAll('a[href^="#"]');
+        linksMenu.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                if (mobileMenuBtn.querySelector('ion-icon')) {
+                    mobileMenuBtn.querySelector('ion-icon').setAttribute('name', 'menu-outline');
+                }
+            });
+        });
+    }
+
     // --- Navbar Scroll Effect ---
     const header = document.getElementById('header');
 
