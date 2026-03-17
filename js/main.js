@@ -88,4 +88,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Select all elements with the .fade-up class
     const animatedElements = document.querySelectorAll('.fade-up');
     animatedElements.forEach(el => observer.observe(el));
+
+    // --- Copy PIX Email ---
+    const copyPixBtn = document.getElementById('copy-pix-btn');
+    const pixEmail = document.getElementById('pix-email');
+
+    if (copyPixBtn && pixEmail) {
+        copyPixBtn.addEventListener('click', () => {
+            const emailText = pixEmail.innerText || pixEmail.textContent;
+            navigator.clipboard.writeText(emailText.trim()).then(() => {
+                const originalHtml = copyPixBtn.innerHTML;
+                copyPixBtn.innerHTML = '<ion-icon name="checkmark-done-outline"></ion-icon> <span>CHAVE PIX COPIADA</span>';
+                copyPixBtn.classList.remove('btn-secondary');
+                copyPixBtn.classList.add('btn-primary');
+
+                setTimeout(() => {
+                    copyPixBtn.innerHTML = originalHtml;
+                    copyPixBtn.classList.remove('btn-primary');
+                    copyPixBtn.classList.add('btn-secondary');
+                }, 3000); // Revert after 3 seconds
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    }
 });

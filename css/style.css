@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #bb86fc;
-  --primary-variant: #3700b3;
+  --primary-color: #fbc02d;
+  --primary-variant: #f9a825;
   --secondary-color: #03dac6;
   --background-dark: #121212;
   --surface-color: #1e1e1e;
@@ -54,6 +54,7 @@ h2 {
   margin-bottom: 3rem;
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -83,6 +84,7 @@ p {
 .text-gradient {
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -101,9 +103,9 @@ p {
 }
 
 .btn-primary {
-  background: linear-gradient(45deg, var(--primary-color), #8a4af3);
+  background: linear-gradient(45deg, var(--primary-color), #f9a825);
   color: var(--text-on-primary);
-  box-shadow: 0 4px 15px rgba(187, 134, 252, 0.4);
+  box-shadow: 0 4px 15px rgba(251, 192, 45, 0.4);
 }
 
 .btn-primary:hover {

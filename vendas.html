@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprar NeoKaraoke V1.0</title>
-    <meta name="description" content="Adquira sua licença vitalícia do NeoKaraoke por apenas R$ 19,99.">
+    <title>Apoie o NeoKaraoke</title>
+    <meta name="description" content="Contribua para a campanha de arrecadação do NeoKaraoke e ajude o projeto a crescer.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -84,21 +84,18 @@
     <main>
         <section class="checkout-container">
             <div class="checkout-box glass-panel fade-up">
-                <h2>Licença Vitalícia</h2>
+                <h2>Apoie o Projeto</h2>
                 <div class="price">
-                    <span>R$</span> 20,00
+                    <span>A partir de R$</span> 10,00
                 </div>
-                <p>Pagamento único. Sem mensalidades.</p>
+                <p>Ao atingirmos <strong>R$ 350</strong>, o programa será gratuito!</p>
 
                 <ul class="features-list">
-                    <li><ion-icon name="checkmark-circle"></ion-icon> Licença atrelada ao seu Computador</li>
-                    <li><ion-icon name="checkmark-circle"></ion-icon> Sistema de Fila Inteligente unificado</li>
-                    <li><ion-icon name="checkmark-circle"></ion-icon> Download Direto e Rápido do YouTube em MP4</li>
-                    <li><ion-icon name="checkmark-circle"></ion-icon> Tela de Visualização Remota (PC/Smart TV)</li>
-                    <li><ion-icon name="checkmark-circle"></ion-icon> DJ de Intervalo Integrado automático</li>
-                    <li><ion-icon name="checkmark-circle"></ion-icon> Inserção Ágil de Múltiplos Cantores</li>
-                    <li><ion-icon name="checkmark-circle"></ion-icon> Atualizador Inteligente do Motor Embutido</li>
-                    <li><ion-icon name="checkmark-circle"></ion-icon> Funciona em Windows 8/10/11</li>
+                    <li><ion-icon name="headset-outline"></ion-icon> Suporte Técnico Dedicado</li>
+                    <li><ion-icon name="time-outline"></ion-icon> Acesso antecipado a atualizações (Beta)</li>
+                    <li><ion-icon name="heart-outline"></ion-icon> Ajuda a liberar o programa para todos</li>
+                    <li><ion-icon name="code-working-outline"></ion-icon> Financia novas funcionalidades</li>
+                    <li><ion-icon name="bug-outline"></ion-icon> Melhora a estabilidade e correções</li>
                 </ul>
 
                 <div
@@ -107,20 +104,33 @@
                         style="color: var(--secondary-color); margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
                         <ion-icon name="qr-code-outline"></ion-icon> Pague via PIX
                     </h3>
-                    <p style="margin-bottom: 1rem; font-size: 0.95rem;">Transfira o valor exato para a chave E-mail
-                        abaixo:</p>
-                    <div
+                    <p style="margin-bottom: 1rem; font-size: 0.95rem;">Transfira o valor (mínimo R$ 10) para o E-mail:</p>
+                    <div id="pix-email"
                         style="background: var(--surface-color); padding: 0.8rem; border-radius: 8px; font-family: monospace; font-size: 1.2rem; margin-bottom: 1rem; user-select: all; font-weight: bold;">
                         equipe360rj@gmail.com
                     </div>
+                    <button id="copy-pix-btn" class="btn btn-secondary"
+                        style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 0.5rem; padding: 0.6rem;">
+                        <ion-icon name="copy-outline"></ion-icon> <span>Copiar E-mail</span>
+                    </button>
                 </div>
                 <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                    Após o pagamento, envie o comprovante e a sua "Chave Secundária" (informada no programa) para este
-                    mesmo e-mail para receber a liberação permanente.
+                    Após a sua contribuição, você pode entrar em contato conosco pelo WhatsApp para receber novidades e suporte sobre o projeto <a href="https://wa.me/5521988550613" target="_blank"
+                        style="color: var(--secondary-color); font-weight: bold; text-decoration: none;">(CLIQUE
+                        AQUI)</a>. Agradecemos imensamente o seu apoio!
                 </p>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <a href="docs.html" style="color: var(--text-secondary); text-decoration: none; margin-right: 20px;">Suporte</a>
+                &copy; 2026 NeoKaraoke Systems. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

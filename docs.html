@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação | NeoKaraoke</title>
+    <meta name="description" content="Guia oficial de funcionamento das abas e recursos do NeoKaraoke.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <ion-icon name="mic-outline" style="color: var(--primary-color);"></ion-icon>
+                NeoKaraoke
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="vendas.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Apoiar Campanha</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 1rem;">
+        <h1 class="text-gradient fade-up" style="font-size: 3rem; margin-bottom: 2rem;">Documentação do Sistema</h1>
+
+        <div class="features-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; gap: 2rem;">
+            <!-- Aba Karaokê -->
+            <div class="glass-panel fade-up" style="text-align: left; padding: 2.5rem;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div class="feature-icon" style="margin: 0;"><ion-icon name="play-circle-outline"></ion-icon></div>
+                    <h2 class="feature-title" style="margin: 0; font-size: 1.8rem;">1. Aba Karaokê</h2>
+                </div>
+                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary);">
+                    É a central de entretenimento do sistema. Nesta aba, você pode buscar músicas na sua biblioteca
+                    local por nome ou código, visualizar a lista completa de arquivos e gerenciar a fila de reprodução.
+                    Permite o controle total do player com funções de Iniciar (Play), Parar (Stop) e Reiniciar a música
+                    atual.
+                </p>
+            </div>
+
+            <!-- Aba Break -->
+            <div class="glass-panel fade-up" style="text-align: left; padding: 2.5rem; transition-delay: 0.1s;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div class="feature-icon" style="margin: 0;"><ion-icon name="musical-notes-outline"></ion-icon>
+                    </div>
+                    <h2 class="feature-title" style="margin: 0; font-size: 1.8rem;">2. Aba Break</h2>
+                </div>
+                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary);">
+                    Funciona como um DJ automático para os intervalos. Quando não houver cantores na fila, o sistema
+                    ativa automaticamente esta aba para tocar músicas de fundo, garantindo que o ambiente nunca fique em
+                    silêncio. Você pode configurar uma playlist específica e ajustar o volume independente para o
+                    intervalo.
+                </p>
+            </div>
+
+            <!-- Aba Painel -->
+            <div class="glass-panel fade-up" style="text-align: left; padding: 2.5rem; transition-delay: 0.2s;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div class="feature-icon" style="margin: 0;"><ion-icon name="stats-chart-outline"></ion-icon></div>
+                    <h2 class="feature-title" style="margin: 0; font-size: 1.8rem;">3. Aba Painel</h2>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color); font-size: 1.3rem; margin-bottom: 0.5rem;">Painel Web</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary);">
+                        Exibe o endereço IP local que pode ser acessado por uma Smart TV ou outro PC na mesma rede. Isso
+                        permite exibir as mídias e conteúdos do <strong>Controle de Exibição</strong> em uma tela
+                        secundária sem cabos.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color); font-size: 1.3rem; margin-bottom: 0.5rem;">QR Code e
+                        Controle Remoto</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary);">
+                        O QR Code é o link direto para o arquivo <code>controle.html</code>. Ele funciona como um
+                        controle remoto completo que pode ser operado via smartphone, permitindo comandar o sistema à
+                        distância, fora do PC principal.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color); font-size: 1.3rem; margin-bottom: 0.5rem;">Controle de
+                        Pedidos Web</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1rem;">
+                        Esta seção conta com dois controles fundamentais:</p>
+                    <ul
+                        style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li><strong>Pedidos Web:</strong> Ativa ou desativa a busca por novos pedidos vindos da
+                            internet.</li>
+                        <li><strong>Aprovação Auto:</strong> Quando ativado, os pedidos entram diretamente na Fila de
+                            Reprodução sem necessidade de aprovação manual.</li>
+                    </ul>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color); font-size: 1.3rem; margin-bottom: 0.5rem;">Controle de
+                        Exibição</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary);">
+                        Contém os botões que ativam as mídias (vídeos, imagens ou fundos) que são exibidas em tempo real
+                        no <strong>Painel Web</strong>.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 style="color: var(--primary-color); font-size: 1.3rem; margin-bottom: 0.5rem;">Catálogo Videokê
+                        Clássico</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary);">
+                        Sistema de busca baseado no catálogo das antigas máquinas de karaokê da Raf Eletronics. Ideal
+                        para cantores que já conhecem a numeração de suas músicas favoritas de cor, facilitando o
+                        encontro do nome da música correspondente.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Aba Download -->
+            <div class="glass-panel fade-up" style="text-align: left; padding: 2.5rem; transition-delay: 0.3s;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <div class="feature-icon" style="margin: 0;"><ion-icon name="cloud-download-outline"></ion-icon>
+                    </div>
+                    <h2 class="feature-title" style="margin: 0; font-size: 1.8rem;">4. Aba Download</h2>
+                </div>
+                <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary);">
+                    Integrada com o YouTube, permite expandir sua biblioteca instantaneamente. Basta digitar o nome do
+                    artista ou música para buscar vídeos, escolher o formato desejado (Vídeo ou apenas Áudio MP3) e o
+                    sistema realizará o download e a importação automática para sua coleção.
+                </p>
+            </div>
+
+            <!-- Aba Ajuda -->
+            <div class="glass-panel fade-up" style="text-align: left; padding: 2.5rem; transition-delay: 0.4s;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div class="feature-icon" style="margin: 0;"><ion-icon name="help-circle-outline"></ion-icon></div>
+                    <h2 class="feature-title" style="margin: 0; font-size: 1.8rem;">5. Aba Ajuda / Sobre</h2>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color); font-size: 1.3rem; margin-bottom: 0.5rem;">Créditos e Informações</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary);">
+                        Esta seção funciona como o "Sobre" do sistema. Aqui você encontra os créditos dos desenvolvedores e informações importantes sobre o <strong>licenciamento</strong> do programa NeoKaraoke.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-color); font-size: 1.3rem; margin-bottom: 0.5rem;">Manutenção do Motor de Busca</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-secondary);">
+                        Contém o botão de manutenção preventiva para o motor de downloads (<strong>yt-dlp</strong>). Esta função garante que o sistema de busca e download de vídeos do YouTube permaneça sempre atualizado e funcional.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                &copy; 2026 NeoKaraoke Systems. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
