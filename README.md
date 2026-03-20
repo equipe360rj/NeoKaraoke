@@ -38,11 +38,4 @@
 - **Maintenance**: yt-dlp download engine autoupdate.
 
 
----
-
-## 🤝 Campanha de Apoio / Support Campaign
-Estamos em campanha para atingir a meta de **R$ 350,00** para tornar este projeto acessível e manter o suporte ativo. Contribuidores recebem atualizações antecipadas e suporte prioritário.
-
-We are running a campaign to reach the **R$ 350.00** goal to keep the project accessible and support active. Contributors receive early updates and priority support.
-
 **© 2026 NeoKaraoke Systems**
