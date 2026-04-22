@@ -4,8 +4,6 @@
 >
 > **[EN-US]** Professional Karaoke management system with web integration, automatic downloads, and remote display control.
 
-### 🌐 [https://equipe360rj.github.io/NeoKaraoke/](https://equipe360rj.github.io/NeoKaraoke/)
-
 ---
 
 ## 🇧🇷 Português (Brasil)
