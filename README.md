@@ -3,6 +3,8 @@
 > **[PT-BR]** Sistema profissional de gerenciamento de Karaokê com integração web, downloads automáticos e controle de exibição remoto.
 >
 > **[EN-US]** Professional Karaoke management system with web integration, automatic downloads, and remote display control.
+>
+> https://equipe360rj.github.io/NeoKaraoke/
 
 ---
 
