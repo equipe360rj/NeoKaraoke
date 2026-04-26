@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interface - NeoKaraoke</title>
+  <link rel="icon" type="image/x-icon" href="../../assets/images/mic.ico">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid var(--glass-border);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 243, 255, 0.2);
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">🎙️ <span>Neo<span class="karaoke-text">Karaoke</span></span></a>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page1.html">Features</a></li>
+      <li><a href="page2.html" class="active">Interface</a></li>
+      <li><a href="page3.html">FAQ</a></li>
+      <li><a href="page5.html">Support</a></li>
+      <li><a href="page4.html" class="nav-btn">Buy</a></li>
+      <li class="lang-selector">
+        <a href="../page2.html" class="lang-link">PT</a>
+        <span class="lang-sep">|</span>
+        <a href="#" class="lang-link active">EN</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Interface Section -->
+  <section class="container" style="padding-top: 8rem;">
+    
+    <div class="glass-card" style="margin-bottom: 4rem;">
+      <h2 class="section-title" style="margin-bottom: 1rem;">Main Interface</h2>
+      <p style="text-align: center; color: var(--text-muted);">A clean, intuitive interface designed for real-time use.</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="../images/en/2026-04-232001-32-28-neokaraoke20professional-1366x768.jpg" alt="Interface" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="../images/en/2026-04-232001-35-04-neokaraoke20professional-1366x768.jpg" alt="Interface" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="../images/en/2026-04-232001-34-46-neokaraoke20professional-1366x768.jpg" alt="Interface" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="../images/en/2026-04-232001-35-19-neokaraoke20professional-1366x768.jpg" alt="Interface" class="gallery-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-card">
+      <h2 class="section-title" style="margin-bottom: 1rem;">Settings Menu</h2>
+      <p style="text-align: center; color: var(--text-muted);">Everything at your fingertips with a few clicks.</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="../images/en/menu1-766x630.jpeg" alt="Config" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="../images/en/2026-04-232001-39-14-neokaraoke20professional-765x634.jpeg" alt="Config" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="../images/en/2026-04-232001-39-33-neokaraoke20professional-761x631.jpeg" alt="Config" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="../images/en/2026-04-232001-40-33-configurac3a7c3b5es20do20sistema-761x626.jpeg" alt="Config" class="gallery-img">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <div class="modal-nav">
+      <span class="prev-modal">&#10094;</span>
+      <img class="modal-content" id="modalImg">
+      <span class="next-modal">&#10095;</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© Copyright 2026 NeoKaraoke - All Rights Reserved</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+

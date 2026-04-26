@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar - NeoKaraoke</title>
+  <link rel="icon" type="image/x-icon" href="../assets/images/mic.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">🎙️ <span>Neo<span class="karaoke-text">Karaoke</span></span></a>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page1.html">Recursos</a></li>
+      <li><a href="page2.html">Interface</a></li>
+      <li><a href="page3.html">FAQ</a></li>
+      <li><a href="page5.html">Suporte</a></li>
+      <li><a href="page4.html" class="active nav-btn">Comprar</a></li>
+      <li class="lang-selector">
+        <a href="#" class="lang-link active">PT</a>
+        <span class="lang-sep">|</span>
+        <a href="en/page4.html" class="lang-link">EN</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Pricing Section -->
+  <section class="container" style="padding-top: 8rem; max-width: 1000px;">
+    <h2 class="section-title">Adquira sua licença do NeoKaraoke</h2>
+    
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <p style="color: var(--text-muted); font-size: 1.2rem;">Ambas as licenças incluem:</p>
+      <ul style="list-style: none; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1rem; color: var(--text-main); font-size: 1.1rem;">
+        <li>✅ Suporte Técnico Dedicado</li>
+        <li>✅ Uso profissional livre de bloqueios</li>
+        <li>✅ Acesso a todas as atualizações</li>
+        <li>✅ Garantia de estabilidade e correções</li>
+      </ul>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="pricing-grid" style="margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+      <div class="glass-card" style="text-align: center; border-color: var(--neon-cyan);">
+        <h3 class="price-title" style="color: var(--neon-cyan); margin-bottom: 0;">Versão Basic</h3>
+        <div class="price-amount" style="font-size: 3.5rem; margin: 1rem 0; text-shadow: 0 0 15px rgba(0,243,255,0.4);">R$ 30</div>
+        <p style="color: var(--text-muted); margin-bottom: 0;">Pagamento único via PIX</p>
+      </div>
+      
+      <div class="glass-card" style="text-align: center; border-color: var(--neon-magenta);">
+        <h3 class="price-title" style="color: var(--neon-magenta); margin-bottom: 0;">Versão Pro</h3>
+        <div class="price-amount" style="font-size: 3.5rem; margin: 1rem 0; text-shadow: 0 0 15px rgba(255,0,255,0.4);">R$ 50</div>
+        <p style="color: var(--text-muted); margin-bottom: 0;">Pagamento único via PIX</p>
+      </div>
+    </div>
+    
+    <!-- Payment Info -->
+    <div class="glass-card" style="text-align: center; max-width: 600px; margin: 0 auto;">
+      <h3 style="margin-bottom: 1.5rem; color: var(--neon-cyan);">Como realizar o pagamento</h3>
+      <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(0,243,255,0.05); border-radius: 10px; border: 1px solid var(--neon-cyan); display: inline-block; width: 100%;">
+        <img src="images/pt/qrcode-pix.png" alt="QR Code Pix" style="width: 200px; height: 200px; border-radius: 10px; margin-bottom: 1rem; border: 2px solid var(--neon-cyan); padding: 5px; background: white;">
+        <p style="margin-bottom: 1.5rem; color: var(--text-main); font-weight: bold; font-size: 1.1rem; text-transform: uppercase;">Daniel H. Gregorio Seg.</p>
+        <strong style="color: var(--neon-cyan);">Chave PIX (E-mail):</strong><br>
+        <span id="pixKey" style="display: inline-block; padding: 0.5rem 1rem; margin-top: 0.5rem; background: rgba(0,0,0,0.5); border-radius: 5px; cursor: pointer; border: 1px dashed var(--text-muted); transition: all 0.3s ease; font-weight: bold;" title="Clique para copiar" onclick="copyPixKey()">neokaraoke.app@gmail.com</span>
+        <p id="copyMsg" style="font-size: 0.85rem; color: #00ff88; margin-top: 0.5rem; opacity: 0; transition: opacity 0.3s ease;">✓ Chave copiada com sucesso!</p>
+      </div>
+      <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem;">Após a compra, envie o comprovante no nosso WhatsApp para receber o link de download. Ao abrir o programa, ele exibirá o seu <strong>código KID</strong>. Envie este código para nós e geraremos a sua chave de liberação definitiva.</p>
+      <a href="https://wa.me/5521988550613" target="_blank" class="btn-primary" style="display: inline-block; border-color: #25D366; color: #25D366; text-shadow: 0 0 5px #25D366; box-shadow: 0 0 10px rgba(37,211,102,0.2);">💬 Enviar Comprovante no WhatsApp</a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© Copyright 2026 NeoKaraoke - Todos os Direitos Reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte - NeoKaraoke</title>
+  <link rel="icon" type="image/x-icon" href="../assets/images/mic.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">🎙️ <span>Neo<span class="karaoke-text">Karaoke</span></span></a>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page1.html">Recursos</a></li>
+      <li><a href="page2.html">Interface</a></li>
+      <li><a href="page3.html">FAQ</a></li>
+      <li><a href="page5.html" class="active">Suporte</a></li>
+      <li><a href="page4.html" class="nav-btn">Comprar</a></li>
+      <li class="lang-selector">
+        <a href="#" class="lang-link active">PT</a>
+        <span class="lang-sep">|</span>
+        <a href="en/page5.html" class="lang-link">EN</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Suporte Section -->
+  <section class="container" style="padding-top: 8rem; max-width: 1000px;">
+    <h2 class="section-title">Central de Suporte</h2>
+    <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem; font-size: 1.2rem;">Como podemos ajudar você hoje?</p>
+
+    <!-- Quick Contact Cards -->
+    <div class="pricing-grid" style="margin-bottom: 4rem;">
+      <!-- WhatsApp Card -->
+      <div class="glass-card" style="text-align: center; border-color: rgba(37,211,102,0.5);">
+        <span style="font-size: 3rem; display: block; margin-bottom: 1rem; color: #25D366;">💬</span>
+        <h3 style="color: #25D366; margin-bottom: 1rem;">WhatsApp</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Atendimento rápido, dúvidas urgentes, envio de comprovantes PIX e liberação de licenças.</p>
+        <p style="font-weight: bold; margin-bottom: 1.5rem; font-size: 1.2rem;">+55 21 98855-0613</p>
+        <a href="https://wa.me/5521988550613" target="_blank" class="btn-primary" style="border-color: #25D366; color: #25D366; text-shadow: 0 0 5px #25D366;">Chamar no Zap</a>
+      </div>
+
+      <!-- Email Card -->
+      <div class="glass-card" style="text-align: center; border-color: rgba(0,243,255,0.5);">
+        <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">✉️</span>
+        <h3 style="color: var(--neon-cyan); margin-bottom: 1rem;">E-mail</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Suporte técnico avançado.</p>
+        <p style="font-weight: bold; margin-bottom: 1.5rem; font-size: 1.2rem;">neokaraoke.app@gmail.com</p>
+        <a href="mailto:neokaraoke.app@gmail.com" class="btn-primary">Enviar E-mail</a>
+      </div>
+    </div>
+
+    <!-- Contact Form (For GitHub Pages) -->
+    <div class="glass-card" style="max-width: 700px; margin: 0 auto 4rem auto; padding: 3rem;">
+      <h3 style="text-align: center; color: var(--neon-magenta); margin-bottom: 1.5rem; font-size: 2rem;">Envie uma Mensagem</h3>
+      <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Preencha o formulário abaixo e entraremos em contato o mais rápido possível.</p>
+      
+      <!-- O 'action' precisa ser o link gerado no Formspree -->
+      <form action="https://formspree.io/f/xojybpkg" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div>
+          <label style="color: var(--neon-cyan); font-weight: bold; margin-bottom: 0.5rem; display: block;">Seu Nome:</label>
+          <input type="text" name="name" required style="width: 100%; padding: 1rem; border-radius: 5px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.5); color: #fff; outline: none; font-family: inherit; font-size: 1rem; transition: border-color 0.3s ease;">
+        </div>
+        <div>
+          <label style="color: var(--neon-cyan); font-weight: bold; margin-bottom: 0.5rem; display: block;">Seu E-mail (para resposta):</label>
+          <input type="email" name="email" required style="width: 100%; padding: 1rem; border-radius: 5px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.5); color: #fff; outline: none; font-family: inherit; font-size: 1rem; transition: border-color 0.3s ease;">
+        </div>
+        <div>
+          <label style="color: var(--neon-cyan); font-weight: bold; margin-bottom: 0.5rem; display: block;">Como podemos ajudar?</label>
+          <textarea name="message" rows="5" required style="width: 100%; padding: 1rem; border-radius: 5px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.5); color: #fff; outline: none; font-family: inherit; font-size: 1rem; resize: vertical; transition: border-color 0.3s ease;"></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="margin-top: 1rem; width: 100%; font-size: 1.2rem; cursor: pointer; background: transparent;">✉️ Enviar Mensagem</button>
+      </form>
+    </div>
+
+    <!-- Extra links -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <h3 style="margin-bottom: 1.5rem; color: #fff;">Ainda tem dúvidas?</h3>
+      <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+        <a href="page3.html" class="btn-primary" style="border-color: var(--text-muted); color: #fff; text-shadow: 0 0 5px rgba(255,255,255,0.3);">❓ Acessar o FAQ</a>
+        <a href="https://www.youtube.com/@equipe360rj" target="_blank" class="btn-primary" style="border-color: #ff0000; color: #ff0000; box-shadow: 0 0 10px rgba(255,0,0,0.2);">▶️ Assistir Tutoriais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© Copyright 2026 NeoKaraoke - Todos os Direitos Reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
